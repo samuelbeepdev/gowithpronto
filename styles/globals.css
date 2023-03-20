@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --pronto-purple: #550087;
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--pronto-purple);
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+/* Navigation */
+
+nav {
+  min-height: 6vh;
+  position: sticky;
+  top: 0;
+  width: 98vw;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  border-bottom: 3px solid var(--pronto-purple);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 30px var(--pronto-purple);
+}
+
+.navLinks a {
+  color: var(--pronto-purple);
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0 1vw;
+  transition: all 0.2s ease-in-out;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Homepage */
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.heroContentOuter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.heroContentInner {
+  padding: 20px;
+  border-top-right-radius: 30px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  border-top: 8px solid var(--pronto-purple);
+  border-right: 8px solid var(--pronto-purple);
+  border-bottom: 0;
+  box-shadow: 0 0 20px var(--pronto-purple);
+}
+
+.heroContentTypewriter {
+  font-size: 4rem;
+  color: var(--pronto-purple);
+}
+
+.heroContentTypewriterCursor {
+  font-size: 3.6rem;
+}
+
+.pageContent {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.mobileHero {
+  text-align: center;
+  background: url('/hero.jpg') fixed center no-repeat;
+  display: none;
+}
+
+/* Other pages */
+
+.miscPage {
+  padding: 10px;
+  text-align: center;
+}
+
+.stepBoxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stepBox {
+  border: 4px solid var(--pronto-purple);
+  box-shadow: 0 0 10px var(--pronto-purple);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  min-height: 50vh;
+  min-width: 44vw;
+}
+
+.stepBoxTitle {
+  color: var(--pronto-purple);
+  font-size: 1.8rem;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 768px) {
+  .addlLogosDesktop, .navLinks {
+    display: none;
+  }
+
+  .heroImage, .heroContentOuter {
+    display: none;
+  }
+
+  .mobileHero {
+    display: unset;
+  }
+}
