@@ -4,7 +4,8 @@
   --pronto-purple: #550087;
 }
 
-body, html {
+body,
+html {
   font-family: 'Montserrat', sans-serif !important;
   margin: 0;
   padding: 0;
@@ -127,8 +128,8 @@ nav {
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
-  min-height: 50vh;
-  min-width: 44vw;
+  min-height: 35vh;
+  width: 44vw;
 }
 
 .stepBoxTitle {
@@ -136,18 +137,63 @@ nav {
   font-size: 1.8rem;
 }
 
+/* Map destinations */
+
+.mapDestinationBox {
+  font-family: 'Montserrat' !important;
+}
+
+.mapDestinationBox h1 {
+  font-size: 1.3rem;
+}
+
+.mapDestinationBox h2 {
+  font-size: 1rem;
+}
+
+.mapLegend {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 20px 0 0;
+  border-top: 3px solid var(--pronto-purple);
+  border-right: 3px solid var(--pronto-purple);
+  box-shadow: 0 0 4px var(--pronto-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mapLegendImg {
+  vertical-align: middle;
+  padding-right: 10px;
+  max-height: 30px;
+}
+
 /* Responsiveness */
 
-@media screen and (max-width: 768px) {
-  .addlLogosDesktop, .navLinks {
+@media screen and (max-width: 1000px) {
+
+  .addlLogosDesktop,
+  .navLinks {
     display: none;
   }
 
-  .heroImage, .heroContentOuter {
+  .heroImage,
+  .heroContentOuter {
     display: none;
   }
 
   .mobileHero {
     display: unset;
+  }
+
+  .mapLegend {
+    width: 100vw;
+    border-right: unset;
+    border-radius: unset;
   }
 }

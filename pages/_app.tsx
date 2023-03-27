@@ -30,8 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className='navLinks'>
         <Link href={'/'}>Home</Link>
         <Link href={'/map'}>Map</Link>
-        <Link href={'/map'}>Scavenger Hunt</Link>
-        <Link href={'/setup'}>Get PRONTO</Link>
+        <Link href={'/faq'}>FAQ</Link>
       </div>
     </nav>
     <AnimatePresence initial={false} mode={'wait'}>
