@@ -7,13 +7,13 @@ export default function ExploreMap() {
         <div className='mapLegend'>
             <div>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAWBAMAAAAlTTH8AAAABlBMVEUAAAD/AAAb/40iAAAAAnRSTlMAZtJCCVUAAAATSURBVBiVY2AY5EAQFWDwBzkAAGAPAf9q2Z7+AAAAAElFTkSuQmCC" alt="OSM indicator for bus" className='mapLegendImg mapLegendImgBuiltin' />
-                Bus, Rapid, and BREEZE
+                Bus, Rapid, Rural Service, and BREEZE
                 <br />
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAWBAMAAAAlTTH8AAAABlBMVEUAAAAA/gAvWHX8AAAAAnRSTlMAmf9A5tgAAAATSURBVBiVY2AYZEAQFZDMH2QAAL6+A/0CkDWJAAAAAElFTkSuQmCC" alt="OSM indicator for Light Rail" className='mapLegendImg mapLegendImgBuiltin' />
                 Trolley and SPRINTER
                 <br />
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAWBAMAAAAlTTH8AAAADFBMVEUAAADLkjrmlxvxoiaw1HLjAAAAAnRSTlMAsyT7Lw4AAAAdSURBVBiVY2AYZEAQFTAYg4ESGAAZGHx09YMMAADxDgctczZrQgAAAABJRU5ErkJggg==" alt="OSM indicator for Railway" className='mapLegendImg mapLegendImgBuiltin' />
-                Coaster and Amtrak
+                Coaster, Amtrak, other regional rail
                 <br />
                 <img src="/place.png" className='mapLegendImg' />
                 PRONTO Place
