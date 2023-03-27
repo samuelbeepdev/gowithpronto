@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return <>
     <Head>
-      <title>Let's Go with PRONTO</title>
+      <title>Let&apos;s Go with PRONTO</title>
       <link rel="shortcut icon" href="https://www.ridepronto.com/dist/img/favicons/favicon.ico" type="image/x-icon" />
     </Head>
     <nav>
