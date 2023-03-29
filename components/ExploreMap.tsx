@@ -13,10 +13,10 @@ export default function ExploreMap() {
                 Trolley and SPRINTER
                 <br />
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAWBAMAAAAlTTH8AAAADFBMVEUAAADLkjrmlxvxoiaw1HLjAAAAAnRSTlMAsyT7Lw4AAAAdSURBVBiVY2AYZEAQFTAYg4ESGAAZGHx09YMMAADxDgctczZrQgAAAABJRU5ErkJggg==" alt="OSM indicator for Railway" className='mapLegendImg mapLegendImgBuiltin' />
-                Coaster, Amtrak, other regional rail
+                COASTER, Amtrak, other regional rail
                 <br />
                 <img src="/place.png" className='mapLegendImg' />
-                PRONTO Place
+                Popular on PRONTO
                 <br />
                 <br />
                 Powered by Leaflet and OpenStreetMap.
@@ -24,7 +24,7 @@ export default function ExploreMap() {
                 Some services shown may require added payment.
             </div>
         </div>
-        <MapContainer attributionControl={false} zoomControl={false} minZoom={9} maxBounds={[[33.412508,-117.7895363], [32.4920082,-116.8017899]]} center={[32.7123906, -117.157768]} zoom={13} style={{ width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0 }}>
+        <MapContainer attributionControl={false} zoomControl={false} minZoom={11} maxBounds={[[33.412508,-117.7895363], [32.4920082,-116.8017899]]} center={[32.7123906, -117.157768]} zoom={13} style={{ width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0 }}>
             <TileLayer
                 className='mapTileLayer'
                 url="https://tile.memomaps.de/tilegen/{z}/{x}/{y}.png"
