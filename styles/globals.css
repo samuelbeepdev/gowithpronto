@@ -105,8 +105,38 @@ nav {
 
 .mobileHero {
   text-align: center;
-  background: url('/hero.jpg') fixed center no-repeat;
   display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.heroImageMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.heroContentTypewriterMobile {
+  font-size: 3rem;
+  color: var(--pronto-purple);
+}
+
+.mobileHeroContent {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  width: 100vw;
+  box-shadow: 0 0 10px var(--pronto-purple);
+  border-top: 3px solid var(--pronto-purple);
+  border-bottom: 3px solid var(--pronto-purple);
 }
 
 /* Other pages */
@@ -177,9 +207,13 @@ nav {
 
 @media screen and (max-width: 1000px) {
 
-  .addlLogosDesktop,
-  .navLinks {
+  .addlLogosDesktop {
     display: none;
+  }
+
+  .navLinks a {
+    display: block;
+    padding: 7px;
   }
 
   .heroImage,
@@ -188,7 +222,7 @@ nav {
   }
 
   .mobileHero {
-    display: unset;
+    display: flex;
   }
 
   .mapLegend {
