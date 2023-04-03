@@ -9,6 +9,9 @@ interface ExploreDestinationProps {
     isBlueLine?: boolean,
     isOrangeLine?: boolean,
     isGreenLine?: boolean,
+    isCOASTER?: boolean,
+    isAmtrak?: boolean,
+    isSPRINTER?: boolean,
     isBikeFriendly?: boolean,
 }
 
@@ -23,6 +26,12 @@ export default function ExploreDestination(props: ExploreDestinationProps) {
             {props.isOrangeLine && <><span style={{ color: '#FF8F00' }}>Orange Line</span>
             <br /></>}
             {props.isGreenLine && <><span style={{ color: '#00AB46' }}>Green Line</span>
+            <br /></>}
+            {props.isCOASTER && <><span style={{ color: '#01606A' }}>COASTER</span>
+            <br /></>}
+            {props.isAmtrak && <><span style={{ color: '#01606A' }}>Amtrak Pacific Surfliner</span>
+            <br /></>}
+            {props.isSPRINTER && <><span style={{ color: '#01606A' }}>SPRINTER</span>
             <br /></>}
 
             <span style={{ color: '#000099' }}><>Bus routes {props.busRoutes.join(', ')}</></span>
