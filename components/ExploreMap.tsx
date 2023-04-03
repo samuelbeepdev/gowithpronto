@@ -41,7 +41,7 @@ export default function ExploreMap() {
                 Large shopping center in North County San Diego, near University City High School.
             </ExploreDestination>
             <ExploreDestination name={"Old Town"} position={[32.7541515,-117.1993774]} busRoutes={[8, 9, 10, 28, 30, 35, 44, 83, 88, 105]} isBlueLine={true} isGreenLine={true} isCOASTER={true} isAmtrak={true}>
-                The "birthplace of California" is also a busy shopping area and houses one of the region's largest transit centers.
+                The &quot;birthplace of California&quot; is also a busy shopping area and houses one of the region&apos;s largest transit centers.
             </ExploreDestination>
             <ExploreDestination name={"Las Americas Premium Outlets"} position={[32.5439868,-117.0365636]} busRoutes={[906, 907]}>
                 A 560,000 square feet outlet mall in San Ysidro, located directly on the US-Mexico border.
