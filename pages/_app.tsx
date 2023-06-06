@@ -27,11 +27,11 @@ export default function App({ Component, pageProps }: AppProps) {
           </Link>
         </span>
       </div>
-      <div className='navLinks'>
+      {/* <div className='navLinks'>
         <Link href={'/'}>Home</Link>
         <Link href={'/map'}>Map</Link>
         <Link href={'/faq'}>FAQ</Link>
-      </div>
+      </div> */}
     </nav>
     <AnimatePresence initial={false} mode={'wait'}>
       <motion.div

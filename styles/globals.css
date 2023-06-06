@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --pronto-purple: #550087;
+  --pronto-purple: #00a1de;
 }
 
 body,
@@ -27,9 +27,6 @@ nav {
   position: sticky;
   top: 0;
   width: 98vw;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(20px);
-  border-bottom: 3px solid var(--pronto-purple);
   padding-left: 1vw;
   padding-right: 1vw;
   padding-top: 10px;
@@ -38,21 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 30px var(--pronto-purple);
 }
-
-.navLinks a {
-  color: var(--pronto-purple);
-  text-decoration: none;
-  font-size: 1.3rem;
-  margin: 0 1vw;
-  transition: all 0.2s ease-in-out;
-}
-
-.navLinks a:hover {
-  text-decoration: underline;
-}
-
 /* Homepage */
 
 .heroImage {
@@ -67,29 +50,45 @@ nav {
 
 .heroContentOuter {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: 4vh;
+  left: 4vw;
+  width: 96vw;
+  height: 96vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 
 .heroContentInner {
-  padding: 20px;
-  border-top-right-radius: 30px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(20px);
-  border-top: 8px solid var(--pronto-purple);
-  border-right: 8px solid var(--pronto-purple);
-  border-bottom: 0;
+  border: 5px solid var(--pronto-purple);
   box-shadow: 0 0 20px var(--pronto-purple);
+  border-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
-.heroContentTypewriter {
-  font-size: 4rem;
-  color: var(--pronto-purple);
+.fancyText {
+  animation: pulse 8s ease infinite;
+  background: -webkit-linear-gradient(#00a1de, #0000ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 1.6em;
+  }
+
+  50% {
+    font-size: 1.8em;
+  }
+
+  100% {
+    font-size: 1.6em;
+  }
 }
 
 .heroContentTypewriterCursor {
@@ -103,42 +102,6 @@ nav {
   text-align: center;
 }
 
-.mobileHero {
-  text-align: center;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.heroImageMobile {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.heroContentTypewriterMobile {
-  font-size: 3rem;
-  color: var(--pronto-purple);
-}
-
-.mobileHeroContent {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  width: 100vw;
-  box-shadow: 0 0 10px var(--pronto-purple);
-  border-top: 3px solid var(--pronto-purple);
-  border-bottom: 3px solid var(--pronto-purple);
-}
-
 /* Other pages */
 
 .miscPage {
@@ -150,6 +113,7 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 2vw;
 }
 
 .stepBox {
@@ -159,12 +123,14 @@ nav {
   padding: 20px;
   margin: 10px;
   min-height: 35vh;
-  width: 44vw;
+  width: 40vw;
+  margin: 1vw;
+  font-size: 1.6rem;
 }
 
 .stepBoxTitle {
   color: var(--pronto-purple);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 /* Map destinations */
@@ -182,10 +148,10 @@ nav {
 }
 
 .mapLegend {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9999; */
   background: rgba(255, 255, 255, 0.9);
   border-radius: 0 20px 0 0;
   border-top: 3px solid var(--pronto-purple);
@@ -205,7 +171,7 @@ nav {
 
 /* Responsiveness */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
 
   .addlLogosDesktop {
     display: none;
@@ -216,18 +182,36 @@ nav {
     padding: 7px;
   }
 
-  .heroImage,
-  .heroContentOuter {
-    display: none;
-  }
-
-  .mobileHero {
-    display: flex;
-  }
-
   .mapLegend {
     width: 100vw;
     border-right: unset;
     border-radius: unset;
+  }
+
+  .heroContentOuter {
+    padding: 0;
+    left: 0;
+  }
+
+  .heroContentInner {
+    padding: 0;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 100vw;
+  }
+
+  .heroContentInner h1 {
+    padding: 20px;
+    font-size: 2em !important;
+  }
+
+  .stepBox {
+    width: 90vw;
+  }
+
+  .fancyText {
+    animation: unset;
+    font-size: 1.4em;
   }
 }

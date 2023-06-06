@@ -4,7 +4,7 @@ import ExploreDestination from './ExploreDestination'
 
 export default function ExploreMap() {
     return <>
-        <div className='mapLegend'>
+        {/* <div className='mapLegend'>
             <div>
                 These are the places students like you love to go with PRONTO!
                 <br />
@@ -28,8 +28,8 @@ export default function ExploreMap() {
                 <br />
                 Some services shown may require added payment.
             </div>
-        </div>
-        <MapContainer attributionControl={false} zoomControl={false} minZoom={11} maxBounds={[[33.412508,-117.7895363], [32.4920082,-116.8017899]]} center={[32.7123906, -117.157768]} zoom={13} style={{ width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0 }}>
+        </div> */}
+        <MapContainer attributionControl={false} zoomControl={false} minZoom={11} maxBounds={[[33.412508,-117.7895363], [32.4920082,-116.8017899]]} center={[32.7123906, -117.157768]} zoom={10} style={{ width: '100vw', height: '600px' }}>
             <TileLayer
                 className='mapTileLayer'
                 url="https://tile.memomaps.de/tilegen/{z}/{x}/{y}.png"
